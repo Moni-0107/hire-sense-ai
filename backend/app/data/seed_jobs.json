@@ -1,0 +1,91 @@
+[
+  {
+    "title": "Senior Full-Stack Software Engineer",
+    "company": "TechNova Solutions",
+    "location": "San Francisco, CA (Hybrid / Remote)",
+    "employment_type": "Full-time",
+    "experience_level": "Senior",
+    "salary_range": "$140,000 - $175,000",
+    "description": "TechNova is looking for an experienced Full-Stack Engineer to architect and build our next-generation AI recruitment platform. You will design scalable microservices using Python and FastAPI, craft responsive user interfaces in React with TypeScript, and optimize high-throughput PostgreSQL databases. You will collaborate with product designers, implement CI/CD pipelines via Docker and GitHub Actions, and write clean, tested code.",
+    "required_skills": ["python", "fastapi", "react", "typescript", "postgresql", "docker", "rest api", "git"],
+    "preferred_skills": ["aws", "ci/cd", "redis", "tailwind css", "unit testing", "system design"]
+  },
+  {
+    "title": "Data Analyst & Business Intelligence Specialist",
+    "company": "Apex Analytics Group",
+    "location": "New York, NY (Remote)",
+    "employment_type": "Full-time",
+    "experience_level": "Mid-Level",
+    "salary_range": "$95,000 - $125,000",
+    "description": "Apex Analytics is seeking an analytical thinker to transform complex raw data into actionable executive insights. Responsibilities include writing complex SQL queries, building automated ETL data pipelines in Python, creating interactive dashboards in Tableau and Power BI, and conducting statistical analyses. You will partner with business stakeholders to define KPI metrics and uncover revenue growth trends.",
+    "required_skills": ["sql", "python", "data analysis", "tableau", "power bi", "pandas", "data visualization"],
+    "preferred_skills": ["scikit-learn", "etl", "snowflake", "bigquery", "statistics", "communication"]
+  },
+  {
+    "title": "Machine Learning & AI Engineer",
+    "company": "Cognitive AI Labs",
+    "location": "Austin, TX (Remote)",
+    "employment_type": "Full-time",
+    "experience_level": "Senior",
+    "salary_range": "$150,000 - $190,000",
+    "description": "Join our AI research and applied engineering team building cutting-edge NLP and computer vision systems. You will develop and fine-tune Large Language Models (LLMs), implement semantic search algorithms using vector embeddings, preprocess text corpora using spaCy and scikit-learn, and deploy scalable ML inference endpoints using FastAPI, Docker, and PyTorch.",
+    "required_skills": ["python", "machine learning", "nlp", "scikit-learn", "pytorch", "fastapi", "docker", "natural language processing"],
+    "preferred_skills": ["hugging face", "langchain", "deep learning", "spacy", "aws", "kubernetes", "llm"]
+  },
+  {
+    "title": "Frontend React / TypeScript Developer",
+    "company": "PixelCraft Studios",
+    "location": "Seattle, WA (Remote)",
+    "employment_type": "Full-time",
+    "experience_level": "Mid-Level",
+    "salary_range": "$105,000 - $135,000",
+    "description": "We are seeking a talented Frontend Developer passionate about crafting beautiful, accessible, and high-performance web applications. You will work with React 18, TypeScript, Tailwind CSS, and Recharts to build responsive SaaS dashboard interfaces. You will collaborate closely with UI/UX designers, consume RESTful APIs, write Jest/Cypress tests, and optimize front-end performance.",
+    "required_skills": ["react", "typescript", "javascript", "tailwind css", "html5", "css3", "git", "rest api"],
+    "preferred_skills": ["next.js", "redux", "jest", "vite", "ui/ux", "web accessibility"]
+  },
+  {
+    "title": "Backend Python / Cloud Engineer",
+    "company": "CloudScale Systems",
+    "location": "Denver, CO (Hybrid)",
+    "employment_type": "Full-time",
+    "experience_level": "Mid-Level",
+    "salary_range": "$115,000 - $145,000",
+    "description": "CloudScale is seeking a Backend Engineer to build robust cloud-native services. You will design and implement RESTful APIs using Python, Django or FastAPI, manage relational and NoSQL databases, containerize services using Docker and Kubernetes, and deploy to AWS infrastructure. You must have strong knowledge of asynchronous programming, caching strategies, and security best practices.",
+    "required_skills": ["python", "fastapi", "django", "postgresql", "docker", "aws", "git", "rest api"],
+    "preferred_skills": ["redis", "kubernetes", "ci/cd", "microservices", "pytest", "terraform"]
+  },
+  {
+    "title": "DevOps & Cloud Infrastructure Engineer",
+    "company": "InfraCore Cloud",
+    "location": "Chicago, IL (Remote)",
+    "employment_type": "Full-time",
+    "experience_level": "Senior",
+    "salary_range": "$135,000 - $170,000",
+    "description": "InfraCore is looking for an experienced DevOps Engineer to spearhead our cloud infrastructure automation. You will manage multi-region AWS cloud environments, automate infrastructure provisioning using Terraform, orchestrate Kubernetes clusters, design robust CI/CD pipelines using GitHub Actions, and configure monitoring with Prometheus and Grafana.",
+    "required_skills": ["aws", "docker", "kubernetes", "terraform", "ci/cd", "linux", "github actions", "bash"],
+    "preferred_skills": ["prometheus", "grafana", "python", "helm", "ansible", "security"]
+  },
+  {
+    "title": "Junior Software Engineer (Graduate / Entry)",
+    "company": "Vanguard Tech Inc",
+    "location": "Boston, MA (On-site / Hybrid)",
+    "employment_type": "Full-time",
+    "experience_level": "Entry-Level",
+    "salary_range": "$75,000 - $90,000",
+    "description": "An exciting entry-level software engineering opportunity for recent graduates or self-taught programmers. You will join an agile engineering squad building web applications using Python, JavaScript, and SQL. You will receive mentorship from senior staff, participate in code reviews, write unit tests, and contribute directly to customer-facing features.",
+    "required_skills": ["python", "javascript", "sql", "git", "html", "css", "problem solving"],
+    "preferred_skills": ["react", "fastapi", "docker", "linux", "team collaboration"]
+  },
+  {
+    "title": "Cybersecurity & Security Operations Analyst",
+    "company": "CyberShield Defense",
+    "location": "Washington, DC (Hybrid)",
+    "employment_type": "Full-time",
+    "experience_level": "Mid-Level",
+    "salary_range": "$110,000 - $140,000",
+    "description": "Monitor and defend enterprise networks against emerging security threats. Conduct vulnerability assessments, manage incident response protocols, analyze log data using Python and SIEM tools, and enforce least-privilege cloud IAM policies across AWS and Azure environments.",
+    "required_skills": ["security", "linux", "python", "bash", "analytical thinking"],
+    "preferred_skills": ["aws", "azure", "docker", "incident response", "networking"]
+  }
+]
+

@@ -1,0 +1,141 @@
+{
+  "resources": {
+    "docker": {
+      "category": "Cloud & DevOps",
+      "overview": "Containerization platform to build, ship, and run distributed applications anywhere.",
+      "recommended_topics": [
+        "Dockerfile best practices & multi-stage builds",
+        "Docker Compose for multi-container development",
+        "Volume management & container networking",
+        "Image optimization and vulnerability scanning"
+      ],
+      "courses_or_docs": [
+        {"title": "Docker Official Documentation", "url": "https://docs.docker.com/get-started/"},
+        {"title": "Docker & Kubernetes: The Practical Guide (Udemy)", "url": "https://www.udemy.com"},
+        {"title": "FreeCodeCamp Docker for Beginners", "url": "https://www.youtube.com"}
+      ],
+      "hands_on_project": "Containerize a full-stack FastAPI + React app with PostgreSQL using Docker Compose and persistent volumes."
+    },
+    "kubernetes": {
+      "category": "Cloud & DevOps",
+      "overview": "Automate deployment, scaling, and management of containerized workloads.",
+      "recommended_topics": [
+        "Pods, Deployments, and ReplicaSets",
+        "Services, Ingress Controllers, and Cluster Networking",
+        "ConfigMaps, Secrets, and Helm Charts",
+        "Horizontal Pod Autoscaling (HPA) and Resource Limits"
+      ],
+      "courses_or_docs": [
+        {"title": "Kubernetes Official Interactive Tutorial", "url": "https://kubernetes.io/docs/tutorials/"},
+        {"title": "Certified Kubernetes Administrator (CKA) Preparation", "url": "https://killer.sh"}
+      ],
+      "hands_on_project": "Deploy a multi-tier microservice architecture to local Minikube or kind cluster with Ingress and HPA."
+    },
+    "fastapi": {
+      "category": "Backend & APIs",
+      "overview": "Modern, high-performance web framework for building APIs with Python based on standard type hints.",
+      "recommended_topics": [
+        "Dependency Injection system and async endpoints",
+        "Pydantic V2 schema validation and serialization",
+        "OAuth2 JWT authentication & role-based access control",
+        "Background tasks and Celery integration"
+      ],
+      "courses_or_docs": [
+        {"title": "FastAPI Official Documentation & Tutorial", "url": "https://fastapi.tiangolo.com/tutorial/"},
+        {"title": "TestDriven.io FastAPI Microservices", "url": "https://testdriven.io"}
+      ],
+      "hands_on_project": "Build an asynchronous rate-limited REST API with Redis caching and OpenAPI documentation."
+    },
+    "postgresql": {
+      "category": "Databases & Storage",
+      "overview": "Advanced open-source relational database supporting SQL, JSON queries, indexing, and high concurrency.",
+      "recommended_topics": [
+        "Advanced indexing (B-Tree, GIN, BRIN) and EXPLAIN ANALYZE",
+        "Database normalization, foreign keys, and cascading",
+        "Transactions, ACID compliance, and isolation levels",
+        "JSONB querying and full-text search indexing"
+      ],
+      "courses_or_docs": [
+        {"title": "PostgreSQL Official Tutorial", "url": "https://www.postgresql.org/docs/"},
+        {"title": "Use The Index, Luke! (SQL Indexing Guide)", "url": "https://use-the-index-luke.com"}
+      ],
+      "hands_on_project": "Design a relational schema with complex JOINs, materialized views, and partition tables."
+    },
+    "scikit-learn": {
+      "category": "AI, ML & Data Science",
+      "overview": "Gold standard Python library for classical machine learning, feature engineering, and statistical modeling.",
+      "recommended_topics": [
+        "Supervised vs Unsupervised learning algorithms",
+        "Feature scaling, encoding, and Pipelines",
+        "Hyperparameter tuning with GridSearchCV and cross-validation",
+        "Evaluation metrics (ROC-AUC, F1-Score, Confusion Matrix)"
+      ],
+      "courses_or_docs": [
+        {"title": "Scikit-Learn User Guide", "url": "https://scikit-learn.org/stable/user_guide.html"},
+        {"title": "Hands-On Machine Learning with Scikit-Learn (O'Reilly)", "url": "https://github.com/ageron/handson-ml3"}
+      ],
+      "hands_on_project": "Train an end-to-end churn prediction pipeline with feature transformers and model persistence via Joblib."
+    },
+    "react": {
+      "category": "Frontend Frameworks & Libraries",
+      "overview": "Declarative, component-based JavaScript library for building user interfaces.",
+      "recommended_topics": [
+        "React 18 hooks: useState, useEffect, useMemo, useCallback",
+        "Custom hooks and global state management (Zustand/Redux)",
+        "Component lifecycle, lazy loading, and error boundaries",
+        "TypeScript integration and strict prop typing"
+      ],
+      "courses_or_docs": [
+        {"title": "React.dev Official Interactive Docs", "url": "https://react.dev"},
+        {"title": "Epic React by Kent C. Dodds", "url": "https://epicreact.dev"}
+      ],
+      "hands_on_project": "Build a responsive analytics dashboard with live search filtering, pagination, and Recharts."
+    },
+    "aws": {
+      "category": "Cloud & DevOps",
+      "overview": "Leading cloud platform providing scalable compute, storage, databases, and managed services.",
+      "recommended_topics": [
+        "EC2, S3, RDS, and Lambda serverless functions",
+        "VPC networking, Subnets, Route Tables, and Security Groups",
+        "IAM roles, policies, and least-privilege security",
+        "CloudWatch monitoring, alarms, and cost optimization"
+      ],
+      "courses_or_docs": [
+        {"title": "AWS Skill Builder & Free Tier Workshops", "url": "https://explore.skillbuilder.aws"},
+        {"title": "AWS Certified Solutions Architect Course", "url": "https://learn.cantrill.io"}
+      ],
+      "hands_on_project": "Deploy a containerized application to AWS ECS Fargate behind an Application Load Balancer."
+    },
+    "ci/cd": {
+      "category": "Cloud & DevOps",
+      "overview": "Automated pipeline for continuous code integration, automated testing, and seamless deployment.",
+      "recommended_topics": [
+        "GitHub Actions workflow syntax and triggers",
+        "Matrix builds and automated test suites",
+        "Security secrets management and deployment keys",
+        "Zero-downtime rolling and canary deployments"
+      ],
+      "courses_or_docs": [
+        {"title": "GitHub Actions Documentation", "url": "https://docs.github.com/en/actions"},
+        {"title": "GitLab CI/CD Fundamentals", "url": "https://docs.gitlab.com/ee/ci/"}
+      ],
+      "hands_on_project": "Write a multi-stage GitHub Actions workflow that lints, tests, builds Docker image, and deploys on git push."
+    },
+    "default": {
+      "category": "Technical Skill",
+      "overview": "Industry standard technical competency required for modern software engineering and data roles.",
+      "recommended_topics": [
+        "Core architectural fundamentals and syntax",
+        "Best design patterns and idiomatic implementations",
+        "Debugging, profiling, and performance tuning",
+        "Integration with automated unit and integration tests"
+      ],
+      "courses_or_docs": [
+        {"title": "Official Documentation & API Reference", "url": "https://devdocs.io"},
+        {"title": "Roadmap.sh Developer Roadmaps", "url": "https://roadmap.sh"}
+      ],
+      "hands_on_project": "Build a portfolio project demonstrating real-world usage and document it with unit tests in GitHub."
+    }
+  }
+}
+

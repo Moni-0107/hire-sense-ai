@@ -1,0 +1,45 @@
+Alex Johnson
+San Francisco, CA | (555) 019-2834 | alex.johnson@email.com
+linkedin.com/in/alexjohnson-dev | github.com/alexjohnson
+
+PROFESSIONAL SUMMARY
+Senior Full-Stack Engineer with 5+ years of experience designing scalable microservice architectures and interactive web applications. Proven track record in optimizing database queries, reducing AWS infrastructure costs by 32%, and leading cross-functional teams in agile environments.
+
+EDUCATION
+Bachelor of Science in Computer Science
+University of California, Berkeley | 2015 – 2019
+GPA: 3.85 / 4.0
+
+TECHNICAL SKILLS
+- Programming Languages: Python, TypeScript, JavaScript, SQL, Bash
+- Frameworks & Libraries: FastAPI, React, Node.js, Next.js, Django, Tailwind CSS, Express
+- Databases & Storage: PostgreSQL, Redis, MongoDB, SQLAlchemy
+- Cloud & DevOps: Docker, Kubernetes, AWS (EC2, S3, RDS), GitHub Actions, CI/CD, Linux
+- Methodologies: System Design, Microservices, REST APIs, TDD, Agile/Scrum
+
+PROFESSIONAL EXPERIENCE
+
+Senior Software Engineer | CloudScale Systems, San Francisco, CA
+June 2021 – Present
+- Spearheaded the architectural migration of a monolithic application to FastAPI microservices, decreasing 95th percentile API response times by 42%.
+- Engineered high-throughput data processing pipelines handling 15M+ daily events with Redis and PostgreSQL.
+- Implemented automated CI/CD deployment workflows using GitHub Actions and Docker, reducing release cycle time from 3 days to under 25 minutes.
+- Mentored a squad of 5 software engineers and conducted over 80 technical code reviews ensuring 90%+ unit test coverage.
+
+Software Engineer | NexaTech Innovations, San Jose, CA
+July 2019 – May 2021
+- Designed and delivered responsive customer dashboard features in React and TypeScript used by 120,000+ monthly active users.
+- Optimized slow PostgreSQL queries and created composite indexes, saving over $35,000 annually in AWS RDS provisioning.
+- Developed RESTful API endpoints with authentication and role-based access control (RBAC) via JWT tokens.
+
+KEY PROJECTS
+
+HireSense AI – Intelligent Resume & Job Matcher
+Tech Stack: Python, FastAPI, React, TypeScript, PostgreSQL, Docker, scikit-learn
+- Built full-stack platform utilizing NLP TF-IDF cosine similarity to score resume job compatibility.
+- Implemented ATS parsing engine extracting structured entities from PDF and DOCX files.
+
+Distributed Task Queue & Cache Service
+Tech Stack: Python, Redis, Docker, Prometheus
+- Built asynchronous distributed task scheduler handling 5,000 tasks/second with rate limiting and retry backoff.
+

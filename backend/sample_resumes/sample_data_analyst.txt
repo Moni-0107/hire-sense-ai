@@ -1,0 +1,39 @@
+Priya Sharma
+New York, NY | (555) 342-9182 | priya.sharma@analyticsmail.com
+linkedin.com/in/priyasharma-data | github.com/priyasharma
+
+PROFESSIONAL SUMMARY
+Analytical and detail-oriented Data Analyst with 3+ years of experience utilizing SQL, Python, Tableau, and Power BI to translate complex data into business decisions. Specialized in automating ETL pipelines, customer churn analysis, and executive KPI reporting.
+
+EDUCATION
+Master of Science in Business Analytics & Data Science
+Columbia University, New York, NY | 2020 – 2022
+Bachelor of Science in Statistics
+University of Michigan, Ann Arbor, MI | 2016 – 2020
+
+TECHNICAL SKILLS
+- Languages: SQL (PostgreSQL, MySQL, Snowflake), Python (Pandas, NumPy, Matplotlib, Seaborn), R
+- BI & Visualization Tools: Tableau, Power BI, Looker, Excel (Advanced Modeling, Macros)
+- Data Modeling & Engineering: ETL Pipelines, Snowflake, BigQuery, dbt, Feature Engineering
+- Statistical Analysis: Regression Models, Hypothesis Testing, A/B Testing, Time Series Forecasting
+
+PROFESSIONAL EXPERIENCE
+
+Data Analyst | Capital Growth Advisors, New York, NY
+August 2022 – Present
+- Automated end-to-end data pipelines using Python and SQL, saving 15 analyst hours weekly.
+- Designed dynamic Tableau and Power BI executive dashboards tracking $80M in corporate client portfolios.
+- Conducted multivariate A/B testing on client onboarding funnels, boosting conversion rate by 18.5%.
+- Partnered with marketing leadership to segment 250,000+ customer profiles, identifying $1.4M in upsell opportunities.
+
+Junior Business Intelligence Analyst | Horizon Media Group, Chicago, IL
+June 2020 – July 2022
+- Wrote and optimized complex SQL queries and window functions across relational databases with 10M+ rows.
+- Built automated reporting sheets and visualizations tracking digital campaign return on investment (ROI).
+
+PROJECTS
+Customer Churn Prediction Model (Python, Scikit-Learn, Pandas)
+- Built classification model predicting client churn with 87% accuracy, enabling proactive retention campaigns.
+E-Commerce Sales Insights Dashboard (Power BI, SQL, DAX)
+- Developed interactive financial dashboard analyzing customer lifetime value (LTV) and monthly recurring revenue (MRR).
+

@@ -1,0 +1,47 @@
+{
+  "question_classifier_comparison": {
+    "Multinomial Naive Bayes": {
+      "cv_accuracy_mean": 82.5,
+      "cv_accuracy_std": 3.8,
+      "train_macro_f1": 85.0
+    },
+    "Logistic Regression": {
+      "cv_accuracy_mean": 88.0,
+      "cv_accuracy_std": 3.2,
+      "train_macro_f1": 91.5
+    },
+    "Linear SVM (SGDClassifier)": {
+      "cv_accuracy_mean": 86.2,
+      "cv_accuracy_std": 4.1,
+      "train_macro_f1": 89.0
+    }
+  },
+  "selected_best_model": "Logistic Regression",
+  "answer_evaluator_metrics": {
+    "mean_absolute_error_mae": 14.75,
+    "root_mean_squared_error_rmse": 15.62,
+    "pearson_correlation_r": 0.8835,
+    "human_vs_model_samples": [
+      {
+        "human_grade": 88.0,
+        "model_score": 75.3,
+        "error": 12.7
+      },
+      {
+        "human_grade": 45.0,
+        "model_score": 55.2,
+        "error": 10.2
+      },
+      {
+        "human_grade": 94.0,
+        "model_score": 70.5,
+        "error": 23.5
+      },
+      {
+        "human_grade": 35.0,
+        "model_score": 22.4,
+        "error": 12.6
+      }
+    ]
+  }
+}

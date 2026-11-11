@@ -1,0 +1,124 @@
+[
+  {
+    "category": "DBMS",
+    "subtopic": "Indexing & Query Optimization",
+    "title": "Explain B-Trees vs B+ Trees and how Indexes speed up SQL queries",
+    "difficulty": "Medium",
+    "problem_statement": "Describe the internal structure of B-Trees and B+ Trees in relational database management systems. How do indexes improve SELECT query performance, and what trade-offs exist with INSERT/UPDATE operations?",
+    "model_answer": "B+ Trees differ from standard B-Trees because internal nodes only store search keys as routers while all actual data pointers/records reside strictly in leaf nodes. Furthermore, leaf nodes are linked sequentially in a doubly-linked list, allowing O(log N) point lookups and extremely fast O(range) sequential scans. Indexes speed up SELECT queries by avoiding expensive full table scans (sequential I/O) and reducing disk page reads. However, indexes introduce write overhead: INSERT, UPDATE, and DELETE queries must rebalance the tree and maintain node splits, consuming additional storage and compute.",
+    "key_concepts": ["b+ tree", "leaf nodes", "sequential scan", "log n", "disk i/o", "write overhead", "indexing", "split"],
+    "hints": ["Focus on where data pointers are stored in B+ Trees compared to B-Trees", "Mention range queries and sequential disk access"],
+    "company_tags": ["Google", "Amazon", "Oracle"]
+  },
+  {
+    "category": "DBMS",
+    "subtopic": "ACID Properties & Transactions",
+    "title": "What are ACID properties and isolation levels in relational databases?",
+    "difficulty": "Hard",
+    "problem_statement": "Explain the four ACID properties in DBMS. Detail the four SQL transaction isolation levels and describe the anomalies they prevent (dirty reads, non-repeatable reads, phantom reads).",
+    "model_answer": "ACID stands for Atomicity (all-or-nothing execution), Consistency (maintains integrity constraints), Isolation (concurrent transactions execute independently), and Durability (committed data survives crashes via write-ahead logging). The four standard isolation levels from lowest to highest are: 1. Read Uncommitted (prone to dirty reads, non-repeatable reads, phantom reads), 2. Read Committed (prevents dirty reads using short read locks or MVCC snapshots), 3. Repeatable Read (prevents dirty reads and non-repeatable reads), and 4. Serializable (prevents all anomalies including phantom reads using two-phase locking or SSI).",
+    "key_concepts": ["atomicity", "consistency", "isolation", "durability", "read committed", "repeatable read", "serializable", "dirty read", "phantom read", "mvcc"],
+    "hints": ["Break down each letter of ACID first", "Name the three read anomalies and which isolation level blocks each"],
+    "company_tags": ["Microsoft", "Amazon", "Uber"]
+  },
+  {
+    "category": "DSA",
+    "subtopic": "Arrays & Two Pointers",
+    "title": "Two Sum – Target Pair in Array",
+    "difficulty": "Easy",
+    "problem_statement": "Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. You may not use the same element twice. What is the optimal time and space complexity?",
+    "model_answer": "The brute force approach uses nested loops with O(N^2) time complexity. The optimal approach uses a Hash Map (dictionary) to store each visited number and its index. As we iterate through the array, we compute the complement = target - nums[i]. If the complement exists in the Hash Map, we return the pair [map[complement], i]. This achieves O(N) linear time complexity with O(N) space complexity.",
+    "key_concepts": ["hash map", "complement", "o(n) time", "o(n) space", "lookup", "indices"],
+    "hints": ["Think about trading space for time using a hash table", "Store complement = target - current"],
+    "company_tags": ["Amazon", "Meta", "Google", "Apple"]
+  },
+  {
+    "category": "DSA",
+    "subtopic": "Dynamic Programming",
+    "title": "Longest Increasing Subsequence (LIS)",
+    "difficulty": "Medium",
+    "problem_statement": "Given an integer array nums, return the length of the longest strictly increasing subsequence. Compare the O(N^2) DP approach with the optimal O(N log N) patience sorting / binary search approach.",
+    "model_answer": "In the classical dynamic programming approach, dp[i] represents the length of the LIS ending at index i. For each i, we inspect all j < i; if nums[i] > nums[j], dp[i] = max(dp[i], dp[j] + 1). This yields O(N^2) time and O(N) space. The optimal O(N log N) approach uses patience sorting with binary search (bisect_left). We maintain an array 'tails' where tails[i] stores the smallest tail of all increasing subsequences of length i+1. For each number, we use binary search to find its insertion point or append it, resulting in O(N log N) time.",
+    "key_concepts": ["dynamic programming", "subsequence", "o(n^2)", "binary search", "patience sorting", "o(n log n)", "bisect"],
+    "hints": ["Define DP state clearly", "For O(N log N), explain how the tails array maintains the smallest tail of each length"],
+    "company_tags": ["Google", "Microsoft", "Meta"]
+  },
+  {
+    "category": "OOPs",
+    "subtopic": "Four Pillars of OOP",
+    "title": "Explain the Four Pillars of Object-Oriented Programming with real-world examples",
+    "difficulty": "Easy",
+    "problem_statement": "Define Encapsulation, Abstraction, Inheritance, and Polymorphism. Explain how method overriding and method overloading demonstrate polymorphism, and provide practical software engineering scenarios for each.",
+    "model_answer": "1. Encapsulation: Bundling data (attributes) and methods that operate on that data into a single unit (class), hiding internal state via private fields and getters/setters. 2. Abstraction: Hiding internal complexity and exposing only essential interfaces (e.g. abstract classes and interfaces). 3. Inheritance: Mechanism where a child class acquires properties and behaviors from a parent class, promoting code reusability. 4. Polymorphism: Ability of an entity to take multiple forms. Compile-time polymorphism is achieved through method overloading, while runtime polymorphism is achieved through method overriding via dynamic dispatch.",
+    "key_concepts": ["encapsulation", "abstraction", "inheritance", "polymorphism", "method overriding", "method overloading", "interface", "dynamic dispatch"],
+    "hints": ["Structure your answer into the 4 distinct pillars", "Differentiate compile-time vs runtime polymorphism clearly"],
+    "company_tags": ["Amazon", "TCS", "Infosys", "Adobe"]
+  },
+  {
+    "category": "Python",
+    "subtopic": "Memory & Concurrency",
+    "title": "What is the Global Interpreter Lock (GIL) and how does Python handle concurrency?",
+    "difficulty": "Medium",
+    "problem_statement": "Explain what the GIL is in CPython. How does it affect multi-threading for CPU-bound vs I/O-bound tasks, and how should modern Python applications scale across multiple CPU cores?",
+    "model_answer": "The Global Interpreter Lock (GIL) is a mutex in CPython that ensures only one native thread executes Python bytecode at any given time, preventing race conditions in memory management and reference counting. For I/O-bound tasks (network requests, database queries, file reads), multi-threading or async/await (asyncio) works well because the GIL is released during I/O wait. For CPU-bound tasks (data processing, machine learning), multi-threading provides no performance gain due to GIL contention; instead, developers must use the multiprocessing module or process pools (e.g. Celery workers) to bypass the GIL and utilize multiple physical CPU cores.",
+    "key_concepts": ["gil", "global interpreter lock", "cpython", "mutex", "cpu-bound", "i/o-bound", "multiprocessing", "asyncio", "reference counting"],
+    "hints": ["Distinguish between CPU-bound and I/O-bound workloads", "Explain multiprocessing vs multithreading"],
+    "company_tags": ["Meta", "Netflix", "Reddit"]
+  },
+  {
+    "category": "Java",
+    "subtopic": "JVM & Memory Management",
+    "title": "Explain JVM Memory Architecture (Heap, Stack, Metaspace) and Garbage Collection",
+    "difficulty": "Hard",
+    "problem_statement": "Detail the JVM memory regions. What is the difference between Heap and Stack memory? Explain Young Generation, Old Generation, and how Generational Garbage Collection works.",
+    "model_answer": "The JVM memory is divided into: 1. Stack: Thread-local memory storing primitive values and object references; allocations and deallocations follow strict LIFO order. 2. Heap: Shared memory where all actual object instances reside. 3. Metaspace: Replaced PermGen in Java 8 to store class metadata in native memory. The Heap is divided generationally: Young Generation (Eden, Survivor spaces S0 and S1) and Old (Tenured) Generation. Generational Garbage Collection relies on the weak generational hypothesis (most objects die young). Minor GC collects short-lived objects from Eden to Survivor; survivors surviving multiple cycles are promoted to Old Gen. Major/Full GC collects Old Gen using collectors like G1GC or ZGC.",
+    "key_concepts": ["heap", "stack", "metaspace", "eden", "survivor", "old generation", "minor gc", "g1gc", "garbage collection"],
+    "hints": ["Differentiate stack allocation vs heap allocation", "Explain object promotion from Eden to Survivor to Tenured"],
+    "company_tags": ["Amazon", "Goldman Sachs", "Morgan Stanley"]
+  },
+  {
+    "category": "System Design",
+    "subtopic": "Distributed Systems",
+    "title": "Design a Distributed Rate Limiter for High-Scale APIs",
+    "difficulty": "Hard",
+    "problem_statement": "How would you design a distributed rate limiter that limits users to 100 requests per minute across a cluster of 50 API gateway nodes? Compare Token Bucket, Leaky Bucket, and Sliding Window Log algorithms.",
+    "model_answer": "A distributed rate limiter should reside at the API Gateway or as a centralized middleware using Redis. Algorithm comparison: 1. Token Bucket: Tokens added at constant rate; burst-friendly and memory efficient. 2. Leaky Bucket: Smooths traffic out at constant egress rate, but can discard bursty requests. 3. Sliding Window Counter: Combines current and previous window counts to prevent boundary burst attacks with low memory. In a distributed environment, use Redis with Lua scripts to ensure atomic increments and checks without race conditions. To handle high traffic without making every request block on Redis, use local in-memory token batching with periodic sync.",
+    "key_concepts": ["token bucket", "sliding window", "redis", "lua script", "race condition", "atomicity", "api gateway", "distributed"],
+    "hints": ["Discuss atomic operations to avoid concurrency race conditions", "Mention Redis Lua scripting for atomic check-and-increment"],
+    "company_tags": ["Google", "Stripe", "Uber", "Amazon"]
+  },
+  {
+    "category": "Frontend",
+    "subtopic": "React Architecture & Performance",
+    "title": "Explain the Virtual DOM, React Fiber, and Reconciliation Algorithm",
+    "difficulty": "Medium",
+    "problem_statement": "How does React reconcile changes between render cycles? What problem did React Fiber solve, and how can developers optimize re-renders using useMemo, useCallback, and React.memo?",
+    "model_answer": "The Virtual DOM is an in-memory lightweight representation of the actual DOM tree. During reconciliation (diffing), React compares the new Virtual DOM with the previous snapshot using an O(N) heuristic algorithm based on element types and keys. React Fiber rewrote the reconciler to enable incremental rendering: instead of blocking the main JavaScript thread with recursive diffing, Fiber breaks rendering work into interruptible units (fibers) scheduled with requestIdleCallback priorities. Performance optimization: React.memo skips re-rendering if props are unchanged; useMemo caches expensive computed values; useCallback preserves function reference identities between renders to prevent unnecessary child re-renders.",
+    "key_concepts": ["virtual dom", "reconciliation", "react fiber", "diffing", "usememo", "usecallback", "react.memo", "keys", "interruptible rendering"],
+    "hints": ["Explain why recursive reconciliation was problematic for UI responsiveness", "Detail how useMemo and useCallback stabilize references"],
+    "company_tags": ["Meta", "Airbnb", "Netflix"]
+  },
+  {
+    "category": "Backend",
+    "subtopic": "API Design & Microservices",
+    "title": "REST vs GraphQL vs gRPC: Architecture Comparison and Trade-offs",
+    "difficulty": "Medium",
+    "problem_statement": "Compare REST, GraphQL, and gRPC. In what scenarios would you choose each, and how do they differ regarding payload serialization, transport protocol, and over/under-fetching?",
+    "model_answer": "1. REST: Uses standard HTTP verbs (GET, POST, PUT, DELETE) with JSON payloads. Highly cacheable via standard HTTP proxy caches and universally understood; however, prone to over-fetching and under-fetching data across multiple endpoints. 2. GraphQL: Single endpoint where clients query the exact schema fields needed, completely eliminating over-fetching and under-fetching. Ideal for complex client apps and mobile frontends, but lacks native HTTP caching and has higher server parsing overhead. 3. gRPC: Operates over HTTP/2 using Protocol Buffers (Protobuf) for compact binary serialization. Offers high throughput, low latency, and bi-directional streaming with strict typed contracts. Best choice for low-latency internal microservice communication.",
+    "key_concepts": ["rest", "graphql", "grpc", "http/2", "protocol buffers", "protobuf", "over-fetching", "under-fetching", "microservices"],
+    "hints": ["Compare the network protocol and serialization formats", "Highlight internal microservices vs public customer-facing APIs"],
+    "company_tags": ["Uber", "Netflix", "Google", "Twitter"]
+  },
+  {
+    "category": "HR",
+    "subtopic": "Behavioral & STAR Method",
+    "title": "Tell me about a time you had a technical disagreement with a teammate or lead",
+    "difficulty": "Medium",
+    "problem_statement": "Answer using the STAR method (Situation, Task, Action, Result). Demonstrate technical maturity, constructive collaboration, data-driven decision making, and professional conflict resolution.",
+    "model_answer": "Situation: At my previous company, my senior engineer proposed migrating our core data store from PostgreSQL to MongoDB to speed up new feature velocity. Task: As the feature owner, I needed to evaluate whether MongoDB would support our strict transactional requirements and financial reporting integrity. Action: Rather than arguing subjectively, I created an objective benchmarking spike. I created prototypes of our 5 most critical queries in both systems and demonstrated that our foreign key constraints and multi-table transactions in MongoDB would require fragile application-level joins and increase latency by 35%. I presented the benchmark data to the lead, and proposed keeping PostgreSQL while adopting JSONB columns for flexible schemas. Result: The team unanimously agreed on the JSONB approach. We delivered the project two weeks early with zero transactional integrity bugs, and the team established a culture of using empirical benchmarks for architecture disputes.",
+    "key_concepts": ["situation", "task", "action", "result", "star method", "data-driven", "collaboration", "conflict resolution", "benchmark"],
+    "hints": ["Never blame the teammate", "Focus on resolving conflicts using objective data and benchmarks"],
+    "company_tags": ["Amazon", "Google", "Microsoft", "Meta"]
+  }
+]
+

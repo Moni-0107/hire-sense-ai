@@ -1,0 +1,49 @@
+{
+  "categories": {
+    "Programming Languages": [
+      "python", "javascript", "typescript", "java", "c++", "c#", "go", "golang", "rust", "ruby", "php", "swift", "kotlin", "scala", "r", "dart", "shell", "bash", "powershell", "sql", "html", "html5", "css", "css3", "sass", "scss"
+    ],
+    "Frontend Frameworks & Libraries": [
+      "react", "react.js", "next.js", "vue", "vue.js", "angular", "svelte", "redux", "tailwind css", "bootstrap", "material ui", "shadcn", "styled-components", "webpack", "vite", "zustand", "jquery"
+    ],
+    "Backend & APIs": [
+      "fastapi", "flask", "django", "node.js", "express", "express.js", "nest.js", "spring boot", "asp.net", "ruby on rails", "graphql", "rest api", "restful apis", "grpc", "microservices", "celery", "websockets"
+    ],
+    "Databases & Storage": [
+      "postgresql", "postgres", "mysql", "sqlite", "mongodb", "redis", "elasticsearch", "cassandra", "dynamodb", "supabase", "firebase", "neo4j", "oracle", "mariadb", "prisma", "sqlalchemy"
+    ],
+    "Cloud & DevOps": [
+      "aws", "amazon web services", "azure", "google cloud", "gcp", "docker", "kubernetes", "k8s", "terraform", "ansible", "jenkins", "github actions", "gitlab ci", "ci/cd", "linux", "nginx", "prometheus", "grafana", "helm", "serverless", "cloudformation"
+    ],
+    "AI, ML & Data Science": [
+      "machine learning", "deep learning", "nlp", "natural language processing", "computer vision", "llm", "large language models", "generative ai", "langchain", "llama-index", "hugging face", "pytorch", "tensorflow", "keras", "scikit-learn", "spacy", "nltk", "opencv", "pandas", "numpy", "matplotlib", "seaborn", "scipy", "data analysis", "data visualization", "tableau", "power bi", "etl", "spark", "apache spark", "hadoop", "databricks", "snowflake", "bigquery", "dbt", "feature engineering", "model deployment"
+    ],
+    "Testing & Quality Assurance": [
+      "pytest", "unittest", "jest", "cypress", "selenium", "playwright", "postman", "tdd", "unit testing", "integration testing"
+    ],
+    "Tools & Methodologies": [
+      "git", "github", "gitlab", "bitbucket", "jira", "confluence", "agile", "scrum", "kanban", "docker compose", "vscode", "postman", "swagger", "openapi", "design patterns", "system design", "object oriented programming", "oop"
+    ],
+    "Soft Skills": [
+      "leadership", "communication", "team collaboration", "problem solving", "critical thinking", "agile mindset", "adaptability", "project management", "mentoring", "stakeholder management", "time management", "analytical thinking"
+    ]
+  },
+  "aliases": {
+    "reactjs": "react",
+    "react.js": "react",
+    "vuejs": "vue",
+    "vue.js": "vue",
+    "nodejs": "node.js",
+    "postgres": "postgresql",
+    "k8s": "kubernetes",
+    "golang": "go",
+    "amazon web services": "aws",
+    "google cloud platform": "gcp",
+    "sklearn": "scikit-learn",
+    "tf": "tensorflow",
+    "ci/cd": "ci/cd pipelines",
+    "rest": "rest api",
+    "restful": "rest api"
+  }
+}
+
